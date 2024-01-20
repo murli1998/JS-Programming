@@ -61,7 +61,20 @@ let x = 5;
 let y = 2;
 
 let w = 4;
-let z = "4";
+let z = "6";
 console.log(x==y);
 console.log(w==z);
 console.log(w===z);
+console.log(w>z);
+console.log(w<z);
+
+
+// logical operators 
+// && -- and 
+// || -- or
+// !  -- not
+let cond1 = a>b;
+let cond2 = w>z;
+console.log(cond1 && cond2);
+console.log(cond1 || cond2);
+
