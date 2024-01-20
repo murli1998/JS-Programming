@@ -1,5 +1,8 @@
 // variable are containers for any data to stored
-
+// variable can be declared with three different keywords 1. var ---- 2. let ----3. const
+// var : variable can be re-declared and updated . A global scope variable
+// let : variable cannot be re-declared but can be updated . A block scope variable.
+// const : variable cannot be re-declared and cannot be updated. A block scope variable.
 firstName = "murli";
 lastName = "manohar";
 age = 21;
