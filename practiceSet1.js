@@ -197,10 +197,39 @@
 
 // slice and splice over an array
 
-let company = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+// let company = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
 
-console.log(company.splice(0,1));     //remove first element from array
+// console.log(company.splice(0,1));     //remove first element from array
 
-console.log(company.splice(1,1,"OLA"));  //replace uber with ola
+// console.log(company.splice(1,1,"OLA"));  //replace uber with ola
 
-console.log(company.splice(5,0,"Amazon"));  //add an element at the end
+// console.log(company.splice(5,0,"Amazon"));  //add an element at the end
+
+
+// functions in javascript
+
+//basic functons
+
+// functionName(parameterA,parameterB){
+//     do some Worker
+//     --------------
+//     --------------
+//     --------------
+// }
+
+
+// arrow function (=>)------------ in mordern javascript we usually use arrow functions
+
+// const functionName = (parameterA,parameterB) => {
+//     do some Worker
+//     --------------
+//     --------------
+//     --------------
+// }
+
+
+// define multiplication function as an arrow function 
+
+const mul = (x,y)=>{
+    return x*y;
+}
