@@ -230,6 +230,104 @@
 
 // define multiplication function as an arrow function 
 
-const mul = (x,y)=>{
-    return x*y;
-}
+// const mul = (x,y)=>{
+//     return x*y;
+// }
+
+
+
+//count vowels in string
+// const countVowels = (s) => {
+//   let count = 0;
+//   for (const char of s) {
+//     if (
+//       char == "A" ||
+//       char == "E" ||
+//       char == "I" ||
+//       char == "O" ||
+//       char == "U" ||
+//       char == "a" ||
+//       char == "e" ||
+//       char == "i" ||
+//       char == "o" ||
+//       char == "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+
+
+// square of all numbers in an array
+
+// let arr = [1,2,3,4];
+// arr.forEach((val)=>{
+//     console.log(val*val);
+// })
+
+// FILTER Method in an array
+
+// let marks = [23,90,45,97,89,96,99];
+
+// let topppers=marks.filter((val)=>{
+//     return val>90;
+// });
+
+// console.log(topppers);
+
+
+//use of reduce method
+
+// let n=prompt()
+// let arr = [];
+
+// for(let i=1;i<=n;i++){
+//     arr[i-1] = i;
+
+// }
+
+// let sum = arr.reduce((res,curr)=>{
+//     return res+curr;
+// });
+// console.log(arr);
+// console.log(sum);
+
+// let product = arr.reduce((prod,curr)=>{
+//     return prod*curr;
+// });
+// console.log(arr);
+// console.log(product);
+
+
+// let newBtn = document.createElement("button");
+// newBtn.innerText="Click me!";
+// newBtn.style.color="white";
+// newBtn.style.backgroundColor = "red";
+// document.querySelector("body").prepend(newBtn);
+// let para = document.querySelector("p");
+
+
+let btn = document.querySelector("#btn");
+let body = document.querySelector("body");
+let currentMode="light";
+btn.addEventListener("click",() => {
+    if(currentMode==="light"){
+        currentMode="dark";
+        body.classList.add("dark");
+        body.classList.remove("light");
+        // body.style.backgroundColor="black";
+        // body.style.backgroundColor="black";
+
+        
+    }else{
+        currentMode = "light";
+        body.classList.add("light");
+        body.classList.remove("dark");
+        // body.style.backgroundColor="white";
+    }
+    console.log(currentMode);
+});
+
+
+
