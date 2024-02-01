@@ -91,6 +91,12 @@ img{
 
 
 /* change mode */
+footer{
+    position: absolute;
+    bottom: 10px;
+    /* left: 0; */
+    right: 10px;
+}
 
 #btn{
     margin-top: 190px;

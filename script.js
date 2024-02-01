@@ -28,23 +28,23 @@ const playGame = (userChoice)=>{
     else{
         userWin = compChoice === "rock"?false:true;
     }
-    showWinner(userWin);
+    showWinner(userWin,userChoice,compChoice);
    }
  
 }
 
-const showWinner = (userWin)=>{
+const showWinner = (userWin,userChoice,compChoice)=>{
     if(userWin){
         console.log("you won !");
         msg.style.backgroundColor = "#7FB685";
         msg.style.borderColor = "#0B6E4F";
-        msg.innerText="Woohoo...You won !";
+        msg.innerText=`Woohoo...You won !, your ${userChoice} beats ${compChoice}`;
         
         userScore++;
         user_Score.innerText=`${userScore}`;
     }else{
         console.log("Better luck... Next time !");
-        msg.innerText="Better luck... Next time !";
+        msg.innerText=`Better luck... Next time ! ${userChoice} beats your ${compChoice}`;
         msg.style.backgroundColor = "#EF6F6C";
         msg.style.borderColor = "#D7263D";
 
