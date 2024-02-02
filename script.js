@@ -54,7 +54,7 @@ const showWinner = (userWin,userChoice,compChoice)=>{
 }
 
 const drawGame = ()=>{
-   
+    console.log("It was a draw !")
     msg.innerText="I was a draw";
     msg.style.backgroundColor = "#424C55";
     msg.style.borderColor = "#000000";
